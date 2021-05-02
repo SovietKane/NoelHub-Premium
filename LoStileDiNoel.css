@@ -34,6 +34,7 @@ h1#title{
  margin-top: 10px;
  padding:0px;
 }
+/*Bottono*/
 button#H{
     position: absolute;
     width: 200px;
@@ -77,4 +78,210 @@ button#E:hover{
     right: 50px;
     border-radius: 100%;
     background-image: url("Immagini/tenor6.gif")
+}
+button#S{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 0px;
+    border-radius: 100%;
+    background-color: #76ff03;
+}
+button#F{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 230px;
+    border-radius: 100%;
+    background-color: #689f38;
+}
+button#N{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 460px;
+    border-radius: 100%;
+    background-color: #ffeb3b;
+}
+button#D{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 680px;
+    border-radius: 100%;
+    background-color: #ff3d00;
+}
+button#C{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 940px;
+    border-radius: 100%;
+    background-color: #7f0000;
+}
+button#Cr{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 1170px;
+    border-radius: 100%;
+    background-color: #d500f9;
+}
+button#S:hover{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 0px;
+    border-radius: 100%;
+
+}
+button#F:hover{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 230px;
+    border-radius: 100%;
+
+}
+button#N:hover{
+    position: absolute;
+    width: 225px;
+    height: 230px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 460px;
+    border-radius: 100%;
+
+}
+button#D:hover{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 690px;
+    border-radius: 100%;
+
+}
+button#C:hover{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 950px;
+    border-radius: 100%;
+
+}
+button#Cr:hover{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    top: 100px;
+    left: 1150px;
+    border-radius: 100%;
+}
+h2#info{
+    position: absolute;
+    top: 320px;
+}
+i#info{
+    position: absolute;
+    top: 380px;
+    background-color: cornsilk;
+    padding-right: 10px;
+}
+h3#soldi{
+    padding-top: 30px;
+}
+img#img{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 200px;
+    border-radius: 25px;
+}
+button#Upgrade1{
+    border-radius: 10px;
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    width: 200px;
+    background-image: url(https://previews.123rf.com/images/stillfx/stillfx1403/stillfx140300236/26901918-primo-piano-di-bamb%C3%B9-sfondo-legno.jpg);
+}
+button#Upgrade1:hover{
+    border-radius: 10px;
+    font-size: 65px;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    width: 250px;
+    background-image: url(https://previews.123rf.com/images/stillfx/stillfx1403/stillfx140300236/26901918-primo-piano-di-bamb%C3%B9-sfondo-legno.jpg);
+}
+/*div#statistiche{
+    background-image: url(https://besthqwallpapers.com/Uploads/30-10-2019/109904/thumb2-vertical-wooden-boards-4k-macro-brown-wooden-texture-wooden-lines.jpg);
+}*/
+h3#rank{
+    padding-bottom: 0px;
+    color: cornsilk;
+}
+h3#guadagno{
+    padding: 0px;
+    color: cornsilk;
+}
+h3#soldi{
+    font-size: x-large;
+    color: whitesmoke;
+    padding-bottom: 0px;
+    position: relative;
+    text-align: center;
+}
+i#here{
+    background-color: cornsilk;
+    position: absolute;
+    top : 200px;
+    left: 225px;
+}
+div#gioco{
+    background-image: url(https://besthqwallpapers.com/Uploads/30-10-2019/109904/thumb2-vertical-wooden-boards-4k-macro-brown-wooden-texture-wooden-lines.jpg);
+}
+input#mostra_cronometro{
+    font-size: x-large;
+    background-color: cornsilk;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+h3#mancanti{
+    padding: 0px;
+    color: cornsilk;
 }
