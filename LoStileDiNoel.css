@@ -302,6 +302,7 @@ button#Marco{
     height: 100px;
     width: 1000px;
 }
+
 button#Uranio{
     font-size: x-large;
     background-repeat: no-repeat;
@@ -357,4 +358,223 @@ button#Erba{
     border-radius: 20px;
     height: 100px;
     width: 1000px;
+}
+
+button#auto{
+    border-radius: 15px;
+    background-image: url(Funzioni/ClickerGame/Alternative/Immagini/mouse.png);
+    height: 100px;
+    width:100px;
+}
+a#auto{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+}
+
+
+button#auto{
+    color: blue;
+    font-size: x-large;
+}
+h3#auto{
+    background-color: blanchedalmond;
+    position: absolute;
+    left: 100px;
+}
+button#Cemento{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Cemento.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Bronzo{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Bronzo.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Argento{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Argento.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Oro{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Oro.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Diamante{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(https://www.ilmarchese.diamonds/wp-content/uploads/2019/05/diamante-per-battesimo-cerimonia-marchese-diamonds-7-100x100.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Amuchina{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(https://www.parafarmaciaconciapelli.it/wp-content/uploads/2014/03/Amuchina-Gel-X-GERM-100x100.png);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Olive{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(https://www.fontegodeisapori.it/wp-content/uploads/2020/10/ca-rainene-genesi-olio-extra-vergine-oliva-500ml-paolo-bonomelli-05-100x100.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Pizza{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(https://www.gifandgif.com/gif_animate/Pizza/pizza%20%283%29.gif);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+
+@media screen and (max-width: 1000px){
+    button#Marco{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/biscotti.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    
+    button#Uranio{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Uranio.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Fagioli{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Fagioli.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Formaggio{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Formaggio.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Prosciutto{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Prosciutto.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Peperoncino{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/peperoncino.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Cloro{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(https://karteline.it/wp-content/uploads/2019/03/clorex-cloro-1219-100x100.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Erba{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(https://www.spaccioitalia.com/wp-content/uploads/2020/07/1kg-Semi-di-erba-da-giardino-di-Alta-Qualit-per-35mq--Crescita-rapida-e-resistente-prato-seminale-Eccezionale-grado-di-tolleranza-dacqua-100-Garanzia-soddisfatti-o-rimborsati-0-2-scaled-100x100.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Cemento{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Cemento.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Bronzo{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Bronzo.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Argento{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Argento.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Oro{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Oro.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Diamante{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(https://www.ilmarchese.diamonds/wp-content/uploads/2019/05/diamante-per-battesimo-cerimonia-marchese-diamonds-7-100x100.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Amuchina{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(https://www.parafarmaciaconciapelli.it/wp-content/uploads/2014/03/Amuchina-Gel-X-GERM-100x100.png);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Olive{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(https://www.fontegodeisapori.it/wp-content/uploads/2020/10/ca-rainene-genesi-olio-extra-vergine-oliva-500ml-paolo-bonomelli-05-100x100.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
+    button#Pizza{
+        font-size: x-large;
+        background-repeat: no-repeat;
+        background-image: url(https://www.gifandgif.com/gif_animate/Pizza/pizza%20%283%29.gif);
+        border-radius: 20px;
+        height: 100px;
+        width: 500px;
+    }
 }

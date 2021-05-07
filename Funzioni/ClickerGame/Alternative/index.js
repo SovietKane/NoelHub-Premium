@@ -22,9 +22,14 @@ document.getElementById("mostra_cronometro").value=visualizzazione;
 setTimeout("cronometro()", 100);
 }
 
+
+console.log("--è molto SUS che stai guardando la console--")
+
+
 var numbers = document.getElementById("soldi");
-num = 0;
-npc = 1;
+var num = 0;
+var npc = 1;
+var autoclick = 0;
 
 function game(){ 
     num += npc;
@@ -43,12 +48,18 @@ function game(){
     if(num > 1000000000000){
         numbers.innerHTML = (num/1000000000000).toFixed(1) + " Bilioni di $"
     }
-    
+    if(num > 1000000000000000){
+        numbers.innerHTML = (num/1000000000000000).toFixed(1) + " Trilioni di $"
+    }
+    if(num > 1000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000).toFixed(1) + " Quadrilioni di $"
+    }
 
     if(num < 20){
         num += 0
     }
-    console.log(num)
+
+
 }
 function upgrade(){
     if(num >= 20){
@@ -136,5 +147,94 @@ function up8(){
     }
     else{
         alert("Sei troppo povero per comprare i biscotti all'erba")
+    }
+}
+function up9(){
+    if(num >= 200000000){
+        var compra = document.getElementById("Cemento")
+        compra.style.display = "none"
+        num = num - 200000000
+        npc = 200000;
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti al cemento")
+    }
+}
+function up10(){
+    if(num >= 1000000000){
+        var compra = document.getElementById("Bronzo")
+        compra.style.display = "none"
+        num = num - 1000000000
+        npc = 1000000;
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti al bronzo")
+    }
+}
+
+function up11(){
+    if(num >= 6000000000){
+        var compra = document.getElementById("Argento")
+        compra.style.display = "none"
+        num = num - 6000000000
+        npc = 5000000;
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti all'argento")
+    }
+}
+function up12(){
+    if(num >= 35000000000){
+        var compra = document.getElementById("Oro")
+        compra.style.display = "none"
+        num = num - 35000000000
+        npc = 100000000;
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti all'oro")
+    }
+}
+function up13(){
+    if(num >= 800000000000){
+        var compra = document.getElementById("Diamante")
+        compra.style.display = "none"
+        num = num - 800000000000
+        npc = 1000000000;
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti al diamante")
+    }
+}
+function up14(){
+    if(num >= 9000000000000){
+        var compra = document.getElementById("Amuchina")
+        compra.style.display = "none"
+        num = num - 9000000000000
+        npc = 5000000000;
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti all'amuchina")
+    }
+}
+function up15(){
+    if(num >= 50000000000000){
+        var compra = document.getElementById("Olive")
+        compra.style.display = "none"
+        num = num - 50000000000000
+        npc = 10000000000;
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti alle olive")
+    }
+}
+function up16(){
+    if(num >= 110000000000000){
+        var compra = document.getElementById("Pizza")
+        compra.style.display = "none"
+        num = num - 110000000000000
+        npc = 1000000000000; //Un Bilione
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti alla pizza")
     }
 }
