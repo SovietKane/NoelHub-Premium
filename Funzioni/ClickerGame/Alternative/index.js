@@ -88,34 +88,69 @@ function game(){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000).toFixed(1) + " Quindecilioni di $"
     }
     if(num > 1000000000000000000000000000000000000000000000000000000){
-        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000).toFixed(1) + " Sestidecilione di $"
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000).toFixed(1) + " Sestidecilioni di $"
     }
     if(num > 1000000000000000000000000000000000000000000000000000000000){
-        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Settidecilione di $"
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Settidecilioni di $"
     }
     if(num > 1000000000000000000000000000000000000000000000000000000000000){
-        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ottidecilione di $"
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ottidecilioni di $"
     }
     if(num > 1000000000000000000000000000000000000000000000000000000000000000){
-        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Nonidecilione di $"
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Nonidecilioni di $"
     }
     if(num > 1000000000000000000000000000000000000000000000000000000000000000000){
-        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ventilione di $"
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Unventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Doventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Triventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Quadriventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Quintiventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Sestiventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Settiventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ottiventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Noniventilioni di $"
+    }
+    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Trentilioni di $"
     }
     if(num < 20){
         num += 0
     }
-
-
+    localStorage.setItem("num",num)
 }
+
+alert("Se hai già giocato una volta a questo gioco e vuoi recuperare gli ultimi guadagni,clicca in alto a destra su Riprendi dalla scorsa volta;Il tasto non funzionerà se voi premete sull'immagine per guadagnare altri soldi perciò attenzione")
+
+
 function upgrade(){
     if(num >= 20){
         var compra = document.getElementById("Marco")
         compra.style.display = "none"
         num = num - 20
         npc = 2;
+        loadup1 = true
     }
     else{
+        loadup1 = false
         alert("Sei troppo povero per comprare i biscotti buoni")
     }
 }
@@ -125,8 +160,10 @@ function up2(){
         compra.style.display = "none"
         num = num - 200
         npc = 10;
+        loadup2 = true
     }
     else{
+        loadup2 = false
         alert("Sei troppo povero per comprare i biscotti all'uranio")
     }
 }
@@ -136,8 +173,10 @@ function up3(){
         compra.style.display = "none"
         num = num - 3000
         npc = 50;
+        loadup3 = true
     }
     else{
+        loadup3 = false
         alert("Sei troppo povero per comprare i biscotti ai fagioli")
     }
 }
@@ -147,8 +186,10 @@ function up4(){
         compra.style.display = "none"
         num = num - 25000
         npc = 100;
+        loadup4 = true
     }
     else{
+        loadup4 = false
         alert("Sei troppo povero per comprare i biscotti al formaggio")
     }
 }
@@ -158,8 +199,9 @@ function up5(){
         compra.style.display = "none"
         num = num - 75000
         npc = 500;
+        loadup5 = true
     }
-    else{
+    else{loadup5 = false
         alert("Sei troppo povero per comprare i biscotti al prosciutto")
     }
 }
@@ -169,8 +211,10 @@ function up6(){
         compra.style.display = "none"
         num = num - 500000
         npc = 5000;
+        loadup6 = true
     }
     else{
+        loadup6 = false
         alert("Sei troppo povero per comprare i biscotti al peperoncino")
     }
 }
@@ -180,8 +224,10 @@ function up7(){
         compra.style.display = "none"
         num = num - 10000000
         npc = 10000;
+        loadup7 = true
     }
     else{
+        loadup7 = false
         alert("Sei troppo povero per comprare i biscotti al cloro")
     }
 }
@@ -191,8 +237,10 @@ function up8(){
         compra.style.display = "none"
         num = num - 30000000
         npc = 50000;
+        loadup8 = true
     }
     else{
+        loadup8 = false
         alert("Sei troppo povero per comprare i biscotti all'erba")
     }
 }
@@ -202,8 +250,10 @@ function up9(){
         compra.style.display = "none"
         num = num - 200000000
         npc = 200000;
+        loadup9 = true
     }
     else{
+        loadup9 = false
         alert("Sei troppo povero per comprare i biscotti al cemento")
     }
 }
@@ -213,8 +263,10 @@ function up10(){
         compra.style.display = "none"
         num = num - 1000000000
         npc = 1000000;
+        loadup10 = true
     }
     else{
+        loadup10 = false
         alert("Sei troppo povero per comprare i biscotti al bronzo")
     }
 }
@@ -225,8 +277,10 @@ function up11(){
         compra.style.display = "none"
         num = num - 6000000000
         npc = 5000000;
+        loadup11 = true
     }
     else{
+        loadup11 = false
         alert("Sei troppo povero per comprare i biscotti all'argento")
     }
 }
@@ -236,8 +290,10 @@ function up12(){
         compra.style.display = "none"
         num = num - 35000000000
         npc = 100000000;
+        loadup12 = true
     }
     else{
+        loadup12 = false
         alert("Sei troppo povero per comprare i biscotti all'oro")
     }
 }
@@ -247,8 +303,10 @@ function up13(){
         compra.style.display = "none"
         num = num - 800000000000
         npc = 1000000000;
+        loadup13 = true
     }
     else{
+        loadup13 = false
         alert("Sei troppo povero per comprare i biscotti al diamante")
     }
 }
@@ -257,9 +315,11 @@ function up14(){
         var compra = document.getElementById("Amuchina")
         compra.style.display = "none"
         num = num - 9000000000000
-        npc = 5000000000;
+        npc = 5000000000
+        loadup14 = true;
     }
     else{
+        loadup14 = false;
         alert("Sei troppo povero per comprare i biscotti all'amuchina")
     }
 }
@@ -269,8 +329,10 @@ function up15(){
         compra.style.display = "none"
         num = num - 50000000000000
         npc = 10000000000;
+        loadup15 = true
     }
     else{
+        loadup15 = false
         alert("Sei troppo povero per comprare i biscotti alle olive")
     }
 }
@@ -280,8 +342,22 @@ function up16(){
         compra.style.display = "none"
         num = num - 110000000000000
         npc = 1000000000000; //Un Bilione
+        loadup16 = true
     }
     else{
+        loadup16 = false
         alert("Sei troppo povero per comprare i biscotti alla pizza")
     }
+}
+
+
+
+
+
+
+function load(){
+    num = localStorage.getItem("num");
+    num = parseInt(num)
+    document.getElementById("soldi").innerHTML = num + "$"
+    alert("Il bottone riprendi dall'ultima volta non è molto preciso,infatti ti resteranno solo i soldi che avevi guadagnato senza upgrades")
 }
