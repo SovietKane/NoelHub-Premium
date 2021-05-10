@@ -29,107 +29,107 @@ console.log("--è molto SUS che stai guardando la console--")
 var numbers = document.getElementById("soldi");
 var num = 0;
 var npc = 1;
-var autoclick = 0;
+
 
 function game(){ 
     num += npc;
     var numbers = document.getElementById("soldi");
-    numbers.innerHTML = num + "$";
+    numbers.innerHTML = num +"$"
 
-    if(num > 1000){
+    if(num >= 1000){
         numbers.innerHTML = (num/1000).toFixed(1) + " Mila $"
     }
-    if(num > 1000000){
+    if(num >= 1000000){
         numbers.innerHTML = (num/1000000).toFixed(1) + " Milioni di $"
     }
-    if(num > 1000000000){
+    if(num >= 1000000000){
         numbers.innerHTML = (num/1000000000).toFixed(1) + " Miliardo di  $"
     }
-    if(num > 1000000000000){
+    if(num >= 1000000000000){
         numbers.innerHTML = (num/1000000000000).toFixed(1) + " Bilioni di $"
     }
-    if(num > 1000000000000000){
+    if(num >= 1000000000000000){
         numbers.innerHTML = (num/1000000000000000).toFixed(1) + " Trilioni di $"
     }
-    if(num > 1000000000000000000){
+    if(num >= 1000000000000000000){
         numbers.innerHTML = (num/1000000000000000000).toFixed(1) + " Quadrilioni di $"
     }
-    if(num > 1000000000000000000000){
+    if(num >= 1000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000).toFixed(1) + " Quintilioni di $"
     }
-    if(num > 1000000000000000000000000){
+    if(num >= 1000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000).toFixed(1) + " Sestilioni di $"
     }
-    if(num > 1000000000000000000000000000){
+    if(num >= 1000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000).toFixed(1) + " Settilioni di $"
     }
-    if(num > 1000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000).toFixed(1) + " Ottilioni di $"
     }
-    if(num > 1000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000).toFixed(1) + " Nonilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000).toFixed(1) + " Decilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000).toFixed(1) + " Undecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000).toFixed(1) + " Dodecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000).toFixed(1) + " Tridecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000).toFixed(1) + " Quadrecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000).toFixed(1) + " Quindecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000).toFixed(1) + " Sestidecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Settidecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ottidecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Nonidecilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Unventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Doventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Triventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Quadriventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Quintiventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Sestiventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Settiventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Ottiventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Noniventilioni di $"
     }
-    if(num > 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Trentilioni di $"
     }
     if(num < 20){
@@ -137,6 +137,95 @@ function game(){
     }
     localStorage.setItem("num",num)
 }
+
+function autoclicker(){
+    var autoclick = document.getElementById("AutoClicker")
+
+    if(num >= 35){
+        setInterval(game , 10000)
+        num = num - 35
+        autoclick.innerHTML = "AutoClicker <br> 1$/10s <br> lvl:1"
+    }
+    if(num >= 500){
+        setInterval(game , 7500)
+        num = num - 500
+        autoclick.innerHTML = "AutoClicker <br> 1$/7.5s <br> lvl:2"
+    }
+    if(num >= 10000){
+        setInterval(game , 5000)
+        num = num - 1000
+        autoclick.innerHTML = "AutoClicker <br> 1$/5s <br> lvl:3"
+    }
+    if(num >= 50000){
+        setInterval(game , 2500)
+        num = num - 50000
+        autoclick.innerHTML = "AutoClicker <br> 1$/2.5s <br> lvl:4"
+    }
+    if(num >= 500000){
+        setInterval(game , 500)
+        num = num - 500000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0.5s <br> lvl:5"
+    }
+    if(num >= 5000000){
+        setInterval(game , 250)
+        num = num - 5000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0.25s <br> lvl:6"
+    }
+    if(num >= 100000000){
+        setInterval(game , 100)
+        num = num - 100000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0.1s <br> lvl:7"
+    }
+    if(num >= 5000000000){
+        setInterval(game , 50)
+        num = num - 5000000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0.05s <br> lvl:8"
+    }
+    if(num >= 100000000000){
+        setInterval(game , 25)
+        num = num - 100000000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0.025s <br> lvl:9"
+    }
+    if(num >= 100000000000000){
+        setInterval(game , 10)
+        num = num - 100000000000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0.01s <br> lvl:9"
+    }
+    if(num >= 1000000000000000000000){
+        setInterval(game , 0.1)
+        num = num - 1000000000000000000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0,1ms <br> lvl:11"
+    }
+    if(num >= 1000000000000000000000000){
+        setInterval(game , 0.01)
+        num = num - 1000000000000000000000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0,01ms <br> lvl:11"
+    }
+    if(num >= 1000000000000000000000000000){
+        setInterval(game , 0.001)
+        num = num - 1000000000000000000000000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0,001ms <br> lvl:12"
+    }
+    if(num >= 1000000000000000000000000000000){
+        setInterval(game , 0.0001)
+        num = num - 1000000000000000000000000000000
+        autoclick.innerHTML = "AutoClicker <br> 1$/0,0001ms <br> lvl:13"
+    }
+    if(num >= 1000000000000000000000000000000000){
+        setInterval(game , 0.00001)
+        num = num - 1000000000000000000000000000000000
+        npc = npc * 2
+        autoclick.innerHTML = "AutoClicker <br> 2$/0,00001ms <br> lvl:13"
+    }
+    if(num >= 1000000000000000000000000000000000000){
+        setInterval(game , 0.00001)
+        num = num - 1000000000000000000000000000000000000
+        npc = npc * 3
+        autoclick.innerHTML = "AutoClicker <br> 3$/1μs <br> lvl:14"
+    }
+}
+
+
 
 alert("Se hai già giocato una volta a questo gioco e vuoi recuperare gli ultimi guadagni,clicca in alto a destra su Riprendi dalla scorsa volta;Il tasto non funzionerà se voi premete sull'immagine per guadagnare altri soldi perciò attenzione")
 
@@ -349,12 +438,32 @@ function up16(){
         alert("Sei troppo povero per comprare i biscotti alla pizza")
     }
 }
-
-
-
-
-
-
+function up17(){
+    if(num >= 12000000000000000){
+        var compra = document.getElementById("Ketchup")
+        compra.style.display = "none"
+        num = num - 12000000000000000
+        npc = 20000000000000; //20 Bilioni
+        loadup17 = true
+    }
+    else{
+        loadup17 = false
+        alert("Sei troppo povero per comprare i biscotti al ketchup")
+    }
+}
+function up18(){
+    if(num >= 260000000000000000){
+        var compra = document.getElementById("Maionese")
+        compra.style.display = "none"
+        num = num - 260000000000000000
+        npc = 100000000000000; //100 Bilioni
+        loadup18 = true
+    }
+    else{
+        loadup18 = false
+        alert("Sei troppo povero per comprare i biscotti al maionese")
+    }
+}
 function load(){
     num = localStorage.getItem("num");
     num = parseInt(num)

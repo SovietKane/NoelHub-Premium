@@ -446,12 +446,39 @@ button#Pizza{
     height: 100px;
     width: 1000px;
 }
+button#Ketchup{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(https://grandshopbd.com/wp-content/uploads/2020/07/Heinz-Tomato-Ketchup-ecommerce-100x100.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Maionese{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(https://bennet-cdn.thron.com/delivery/public/thumbnail/bennet/3b8c77f9-5745-491e-a367-529670dcde73/BEB9AN0/std/100X100/M_1655984_1.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+
+
 button#load{
     height: 50px;
     width: 100px;
     position: absolute;
     right: 0px;
     top: 150px;
+}
+button#AutoClicker{
+    position: absolute;
+    font-size: medium;
+    top: 315px;
+    height: 100px;
+    background-size: 25px;
+    background-image: url(https://i0.wp.com/www.lovetux.eu/wp-content/uploads/2015/02/mouse-pointer-md.png?fit=276%2C299);
+    width: 100px;
 }
 
 
@@ -586,4 +613,31 @@ button#load{
         height: 100px;
         width: 300px;
     }
+    button#Ketchup{
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-image: url(https://grandshopbd.com/wp-content/uploads/2020/07/Heinz-Tomato-Ketchup-ecommerce-100x100.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 300px;
+    }
+    button#Maionese{
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-image: url(https://bennet-cdn.thron.com/delivery/public/thumbnail/bennet/3b8c77f9-5745-491e-a367-529670dcde73/BEB9AN0/std/100X100/M_1655984_1.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 300px;
+    }
+    
+    button#AutoClicker{
+    position: absolute;
+    font-size: medium;
+    top: 315px;
+    height: 100px;
+    background-size: 25px;
+    background-image: url(https://i0.wp.com/www.lovetux.eu/wp-content/uploads/2015/02/mouse-pointer-md.png?fit=276%2C299);
+    width: 100px;
 }
+}
+
