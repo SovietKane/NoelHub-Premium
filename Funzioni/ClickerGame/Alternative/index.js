@@ -138,15 +138,24 @@ function game(){
     localStorage.setItem("num",num)
 }
 
-function autoclicker(){
-    var autoclick = document.getElementById("AutoClicker")
+var soldi2 = document.getElementById("soldi-2");
+var numeretto = localStorage.getItem("num")
 
+function money(){
+    soldi2.innerHTML = numeretto + "$"
+}
+
+function Mario(){
+    var autoclick = document.getElementById("AutoClicker")
     if(num >= 35){
         setInterval(game , 10000)
         num = num - 35
-        autoclick.innerHTML = "AutoClicker <br> 1$/10s <br> lvl:1"
     }
-    if(num >= 500){
+    else{
+        alert("Sei troppo povero per assumere il cuoco Mario")
+    }
+}
+/**    if(num >= 500){
         setInterval(game , 7500)
         num = num - 500
         autoclick.innerHTML = "AutoClicker <br> 1$/7.5s <br> lvl:2"
@@ -222,7 +231,10 @@ function autoclicker(){
         num = num - 1000000000000000000000000000000000000
         npc = npc * 3
         autoclick.innerHTML = "AutoClicker <br> 3$/1μs <br> lvl:14"
-    }
+    }**/
+
+function redirect(){
+    location.href("Autoclicker")
 }
 
 
