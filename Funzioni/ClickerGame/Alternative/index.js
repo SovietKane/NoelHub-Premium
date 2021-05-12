@@ -482,3 +482,32 @@ function load(){
     document.getElementById("soldi").innerHTML = num + "$"
     alert("Il bottone riprendi dall'ultima volta non è molto preciso,infatti ti resteranno solo i soldi che avevi guadagnato senza upgrades")
 }
+
+function hack(){
+    var cheat = document.getElementById("cheat")
+    if(cheat.value == "/give money"){
+        num = 1000000000 //Un Miliardo
+        cheat.value = ""
+    }
+    if(cheat.value == "/ruin"){
+        num = 999999999999999999999999999999999999999999999999999999999999 //Un Miliardo
+        npc = 99999999999999999999999999999999999999999999999999999999999999
+        cheat.value = ""
+    }
+    if(cheat.value == "/clear"){
+        num = 0
+        cheat.value == ""
+    }
+    if(cheat.value == "/marco"){
+        num = "NON PUOI MARCO CATTIVO"
+        cheat.value = ""
+    }
+    if(cheat.value == "/autoclicker"){
+        setInterval(game , 0.00001)
+        npc = npc * 999999999999999999999999999999999
+        cheat.value = ""
+    }
+    if(cheat.value == undefined){
+        cheat.value = ""
+    }
+}

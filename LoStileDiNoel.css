@@ -479,7 +479,6 @@ button#load{
     top: 150px;
 }
 button#AutoClicker{
-    position: absolute;
     font-size: medium;
     height: 100px;
     background-repeat: no-repeat;
@@ -547,7 +546,11 @@ button#Nonna{
     background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwsIEQ4IDQ4IDgcIDQoICAgICg8IEAoNIBEWFhYdHxMkKDQsGCYlGx8VLTEhMSkrMC4uFx8zODMsNygtOisBCgoKDgwNGBAQGisdHx8tKystLS0rLSstLSstNys3KysrKy0rLS0rKysrKysrKysrKystKysrKysrKysrKysrK//AABEIAGQAZAMBIgACEQEDEQH/xAAbAAEAAgIDAAAAAAAAAAAAAAAABgcBBQIDBP/EADAQAAIBAQQHBwQDAAAAAAAAAAABAgMEERKRBQYhQVGS0RMxUmFjcYEWIjLBFKHh/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAIBA//EAB8RAQACAgIDAQEAAAAAAAAAAAABAhETAxQSUWExBP/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgGn0pp2nY59go4qqUXPbhUb+46qestC6+cakWvBdNfo5zy1icZV4WmMt8CJ1NZ6k5Ps4wjSTuipq+T83tMfUdo9Ll/wBInnpEqjitKWgii1jr8KXI+pyWsVb0uR9R2KN1WSkEWWsNb0eV9TP1BX4UuV9R2KGqyUAi61ird11LlfUz9QVuFHlfUdihqskwNLZNOwabqq5p7JQV6yOEtZaN+CMJuPik1D+it1Padds/jfA89mtMK8VUj+L3PcwX5QnEotrNom0yqytVKEqlKqoXxprFKDSu7uB4aGr2kLQsThCnHcq88Dfwr7vknwOU8FZnK45JiFY14VLJKVCrGUa0Hc1diT8096OCr++RaDSfel8oYVwWRE/zR7VHNKsO298jCtF3iyLQwLgshgXBZGdaPbdysVaffIz/ACd+3Is3AuCyGBcFkb1vpuVmrT7hWr3LMwR4LIx2cfDHJGdb6bviBWCx2q3qSpL7I/lVqfYr+Ce9nXPRFuoywyo1W79k6X3xfyv2WEklsV13kZK61cM3TlrNC2SpZ6ShU2VZN1JRT/HuBtAdI4quflIADqkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z);
     width: 100%;
 }
-
+form#cheat{
+    position: absolute;
+    top: 225px;
+    right: 0px;
+}
 
 @media screen and (max-width: 1000px){
     button#Marco{
@@ -697,7 +700,6 @@ button#Nonna{
     }
     
     button#AutoClicker{
-    position: absolute;
     font-size: medium;
     height: 100px;
     background-size: 25px;
