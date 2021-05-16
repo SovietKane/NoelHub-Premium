@@ -132,29 +132,16 @@ function game(){
     if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
         numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Trentilioni di $"
     }
+    if(num >= 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000){
+        numbers.innerHTML = (num/1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).toFixed(1) + " Untrentilioni di $"
+    }
     if(num < 20){
         num += 0
     }
     localStorage.setItem("num",num)
 }
 
-var soldi2 = document.getElementById("soldi-2");
-var numeretto = localStorage.getItem("num")
 
-function money(){
-    soldi2.innerHTML = numeretto + "$"
-}
-
-function Mario(){
-    var autoclick = document.getElementById("AutoClicker")
-    if(num >= 35){
-        setInterval(game , 10000)
-        num = num - 35
-    }
-    else{
-        alert("Sei troppo povero per assumere il cuoco Mario")
-    }
-}
 /**    if(num >= 500){
         setInterval(game , 7500)
         num = num - 500
@@ -232,12 +219,6 @@ function Mario(){
         npc = npc * 3
         autoclick.innerHTML = "AutoClicker <br> 3$/1μs <br> lvl:14"
     }**/
-
-function redirect(){
-    location.href("Autoclicker")
-}
-
-
 
 alert("Se hai già giocato una volta a questo gioco e vuoi recuperare gli ultimi guadagni,clicca in alto a destra su Riprendi dalla scorsa volta;Il tasto non funzionerà se voi premete sull'immagine per guadagnare altri soldi perciò attenzione")
 
@@ -474,6 +455,98 @@ function up18(){
     else{
         loadup18 = false
         alert("Sei troppo povero per comprare i biscotti al maionese")
+    }
+}
+//autoclickers
+function Mario(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 35){
+        setInterval(game , 10000)
+        num = num - 35
+        document.getElementById("Nonna").style.display = "block"
+        document.getElementById("Mario").style.display = "none"
+        clickpersecond.innerHTML = "0,1 cps"
+    }
+    else{
+        alert("Non puoi comprare il cuoco mario")
+    }
+}
+function Nonna(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 100){
+        setInterval(game , 5000)
+        num = num - 100
+        document.getElementById("Nonna").style.display = "none"
+        document.getElementById("MarcoAutoclicker").style.display = "block"
+        clickpersecond.innerHTML = "0,5 cps"
+    }
+    else{
+        alert("Non puoi comprare una nonna")
+    }
+}
+function MarcoAutoclicker(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 500){
+        setInterval(game , 2500)
+        num = num - 500
+        document.getElementById("MarcoAutoclicker").style.display = "none"
+        document.getElementById("Industria").style.display = "block"
+        clickpersecond.innerHTML = "0,75 cps"
+    }
+    else{
+        alert("Non puoi comprare marco")
+    }
+}
+function Industria(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 1500){
+        setInterval(game , 1000)
+        num = num - 1500
+        document.getElementById("Industria").style.display = "none"
+        document.getElementById("Nucleare").style.display = "block"
+        clickpersecond.innerHTML = "1 cps"
+    }
+    else{
+        alert("Non puoi comprare un industria")
+    }
+}
+function Nucleare(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 30000){
+        setInterval(game , 500)
+        num = num - 3000
+        document.getElementById("Nucleare").style.display = "none"
+        document.getElementById("Zombie").style.display = "block"
+        clickpersecond.innerHTML = "2 cps"
+    }
+    else{
+        alert("Non puoi comprare un industria")
+    }
+}
+function Zombie(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 1000000){
+        setInterval(game , 200)
+        num = num - 1000000
+        document.getElementById("Zombie").style.display = "none"
+        document.getElementById("Quantica").style.display = "block"
+        clickpersecond.innerHTML = "5 cps"
+    }
+    else{
+        alert("Non puoi comprare una nonna zombie")
+    }
+}
+function Quantica(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 500000000){
+        setInterval(game , 100)
+        num = num - 500000000
+        document.getElementById("Quantica").style.display = "none"
+        document.getElementById("").style.display = "block"
+        clickpersecond.innerHTML = "10 cps"
+    }
+    else{
+        alert("Non puoi comprare una nonna zombie")
     }
 }
 function load(){
