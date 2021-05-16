@@ -542,11 +542,76 @@ function Quantica(){
         setInterval(game , 100)
         num = num - 500000000
         document.getElementById("Quantica").style.display = "none"
-        document.getElementById("").style.display = "block"
+        document.getElementById("Space").style.display = "block"
         clickpersecond.innerHTML = "10 cps"
     }
     else{
-        alert("Non puoi comprare una nonna zombie")
+        alert("Non puoi comprare una industria quantica")
+    }
+}
+function NASA(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 3000000000){
+        setInterval(game , 40)
+        num = num - 3000000000
+        document.getElementById("Space").style.display = "none"
+        document.getElementById("RAF").style.display = "block"
+        clickpersecond.innerHTML = "25 cps"
+    }
+    else{
+        alert("Non puoi comprare la NASA")
+    }
+}
+function RAF(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 500000000000){
+        setInterval(game , 20)
+        num = num - 500000000000
+        document.getElementById("RAF").style.display = "none"
+        document.getElementById("Reich1").style.display = "block"
+        clickpersecond.innerHTML = "50 cps"
+    }
+    else{
+        alert("Non puoi comprare la Royal Air Force")
+    }
+}
+function Reich1(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 500000000000000){
+        setInterval(game , 13.3)
+        num = num - 500000000000000
+        document.getElementById("Reich1").style.display = "none"
+        document.getElementById("Reich2").style.display = "block"
+        clickpersecond.innerHTML = "75 cps"
+    }
+    else{
+        alert("Non puoi comprare il primo reich(Sacro impero romano germanico)")
+    }
+}
+function Reich2(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 50000000000000000){
+        setInterval(game , 10)
+        num = num - 50000000000000000
+        document.getElementById("Reich2").style.display = "none"
+        document.getElementById("Reich3").style.display = "block"
+        clickpersecond.innerHTML = "100 cps"
+    }
+    else{
+        alert("Non puoi comprare il secondo reich(Impero tedesco)")
+    }
+}
+function Reich3(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 1000000000000000000){
+        setInterval(game , 5)
+        num = num - 1000000000000000000
+        document.getElementById("Reich2").style.display = "none"
+        document.getElementById("Reich3").style.display = "block"
+        clickpersecond.innerHTML = "200 cps"
+    }
+    else{
+        alert("Non puoi comprare il terzo reich(Impero nazista)")
     }
 }
 function load(){
@@ -565,6 +630,10 @@ function hack(){
     if(cheat.value == "/ruin"){
         num = 999999999999999999999999999999999999999999999999999999999999 //Un Miliardo
         npc = 99999999999999999999999999999999999999999999999999999999999999
+        cheat.value = ""
+    }
+    if(cheat.value == "/ruin but not op"){
+        num = 999999999999999999999999999999999999999999999999999999999999 //Un Miliardo
         cheat.value = ""
     }
     if(cheat.value == "/clear"){
