@@ -222,17 +222,15 @@ function game(){
 
 alert("Se hai già giocato una volta a questo gioco e vuoi recuperare gli ultimi guadagni,clicca in alto a destra su Riprendi dalla scorsa volta;Il tasto non funzionerà se voi premete sull'immagine per guadagnare altri soldi perciò attenzione")
 
-
 function upgrade(){
     if(num >= 20){
         var compra = document.getElementById("Marco")
         compra.style.display = "none"
         num = num - 20
         npc = 2;
-        loadup1 = true
     }
     else{
-        loadup1 = false
+         
         alert("Sei troppo povero per comprare i biscotti buoni")
     }
 }
@@ -242,10 +240,11 @@ function up2(){
         compra.style.display = "none"
         num = num - 200
         npc = 10;
-        loadup2 = true
+         
     }
     else{
-        loadup2 = false
+         
+
         alert("Sei troppo povero per comprare i biscotti all'uranio")
     }
 }
@@ -255,10 +254,10 @@ function up3(){
         compra.style.display = "none"
         num = num - 3000
         npc = 50;
-        loadup3 = true
+         
     }
-    else{
-        loadup3 = false
+    else{ 
+
         alert("Sei troppo povero per comprare i biscotti ai fagioli")
     }
 }
@@ -267,11 +266,9 @@ function up4(){
         var compra = document.getElementById("Formaggio")
         compra.style.display = "none"
         num = num - 25000
-        npc = 100;
-        loadup4 = true
+        npc = 100; 
     }
     else{
-        loadup4 = false
         alert("Sei troppo povero per comprare i biscotti al formaggio")
     }
 }
@@ -281,9 +278,10 @@ function up5(){
         compra.style.display = "none"
         num = num - 75000
         npc = 500;
-        loadup5 = true
+         
     }
-    else{loadup5 = false
+    else{ 
+
         alert("Sei troppo povero per comprare i biscotti al prosciutto")
     }
 }
@@ -293,10 +291,11 @@ function up6(){
         compra.style.display = "none"
         num = num - 500000
         npc = 5000;
-        loadup6 = true
+         
     }
     else{
-        loadup6 = false
+         
+
         alert("Sei troppo povero per comprare i biscotti al peperoncino")
     }
 }
@@ -306,10 +305,11 @@ function up7(){
         compra.style.display = "none"
         num = num - 10000000
         npc = 10000;
-        loadup7 = true
+         
     }
     else{
-        loadup7 = false
+         
+
         alert("Sei troppo povero per comprare i biscotti al cloro")
     }
 }
@@ -319,10 +319,11 @@ function up8(){
         compra.style.display = "none"
         num = num - 30000000
         npc = 50000;
-        loadup8 = true
+         
     }
     else{
-        loadup8 = false
+         
+
         alert("Sei troppo povero per comprare i biscotti all'erba")
     }
 }
@@ -332,10 +333,11 @@ function up9(){
         compra.style.display = "none"
         num = num - 200000000
         npc = 200000;
-        loadup9 = true
+         
     }
     else{
-        loadup9 = false
+         
+
         alert("Sei troppo povero per comprare i biscotti al cemento")
     }
 }
@@ -345,10 +347,12 @@ function up10(){
         compra.style.display = "none"
         num = num - 1000000000
         npc = 1000000;
-        loadup10 = true
+        0
+
     }
     else{
-        loadup10 = false
+        0
+        e
         alert("Sei troppo povero per comprare i biscotti al bronzo")
     }
 }
@@ -359,10 +363,12 @@ function up11(){
         compra.style.display = "none"
         num = num - 6000000000
         npc = 5000000;
-        loadup11 = true
+        1
+
     }
     else{
-        loadup11 = false
+        1
+        e
         alert("Sei troppo povero per comprare i biscotti all'argento")
     }
 }
@@ -372,10 +378,12 @@ function up12(){
         compra.style.display = "none"
         num = num - 35000000000
         npc = 100000000;
-        loadup12 = true
+        2
+
     }
     else{
-        loadup12 = false
+        2
+        e
         alert("Sei troppo povero per comprare i biscotti all'oro")
     }
 }
@@ -385,10 +393,12 @@ function up13(){
         compra.style.display = "none"
         num = num - 800000000000
         npc = 1000000000;
-        loadup13 = true
+        3
+
     }
     else{
-        loadup13 = false
+        3
+        e
         alert("Sei troppo povero per comprare i biscotti al diamante")
     }
 }
@@ -398,10 +408,12 @@ function up14(){
         compra.style.display = "none"
         num = num - 9000000000000
         npc = 5000000000
-        loadup14 = true;
+        4
+        ;
     }
     else{
-        loadup14 = false;
+        4
+        e;
         alert("Sei troppo povero per comprare i biscotti all'amuchina")
     }
 }
@@ -411,10 +423,12 @@ function up15(){
         compra.style.display = "none"
         num = num - 50000000000000
         npc = 10000000000;
-        loadup15 = true
+        5
+
     }
     else{
-        loadup15 = false
+        5
+        e
         alert("Sei troppo povero per comprare i biscotti alle olive")
     }
 }
@@ -424,10 +438,12 @@ function up16(){
         compra.style.display = "none"
         num = num - 110000000000000
         npc = 1000000000000; //Un Bilione
-        loadup16 = true
+        6
+
     }
     else{
-        loadup16 = false
+        6
+        e
         alert("Sei troppo povero per comprare i biscotti alla pizza")
     }
 }
@@ -437,10 +453,12 @@ function up17(){
         compra.style.display = "none"
         num = num - 12000000000000000
         npc = 20000000000000; //20 Bilioni
-        loadup17 = true
+        7
+
     }
     else{
-        loadup17 = false
+        7
+        e
         alert("Sei troppo povero per comprare i biscotti al ketchup")
     }
 }
@@ -450,10 +468,12 @@ function up18(){
         compra.style.display = "none"
         num = num - 260000000000000000
         npc = 100000000000000; //100 Bilioni
-        loadup18 = true
+        8
+
     }
     else{
-        loadup18 = false
+        8
+        e
         alert("Sei troppo povero per comprare i biscotti al maionese")
     }
 }
