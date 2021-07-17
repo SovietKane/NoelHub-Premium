@@ -141,93 +141,13 @@ function game(){
     localStorage.setItem("num",num)
 }
 
-
-/**    if(num >= 500){
-        setInterval(game , 7500)
-        num = num - 500
-        autoclick.innerHTML = "AutoClicker <br> 1$/7.5s <br> lvl:2"
-    }
-    if(num >= 10000){
-        setInterval(game , 5000)
-        num = num - 1000
-        autoclick.innerHTML = "AutoClicker <br> 1$/5s <br> lvl:3"
-    }
-    if(num >= 50000){
-        setInterval(game , 2500)
-        num = num - 50000
-        autoclick.innerHTML = "AutoClicker <br> 1$/2.5s <br> lvl:4"
-    }
-    if(num >= 500000){
-        setInterval(game , 500)
-        num = num - 500000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0.5s <br> lvl:5"
-    }
-    if(num >= 5000000){
-        setInterval(game , 250)
-        num = num - 5000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0.25s <br> lvl:6"
-    }
-    if(num >= 100000000){
-        setInterval(game , 100)
-        num = num - 100000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0.1s <br> lvl:7"
-    }
-    if(num >= 5000000000){
-        setInterval(game , 50)
-        num = num - 5000000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0.05s <br> lvl:8"
-    }
-    if(num >= 100000000000){
-        setInterval(game , 25)
-        num = num - 100000000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0.025s <br> lvl:9"
-    }
-    if(num >= 100000000000000){
-        setInterval(game , 10)
-        num = num - 100000000000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0.01s <br> lvl:9"
-    }
-    if(num >= 1000000000000000000000){
-        setInterval(game , 0.1)
-        num = num - 1000000000000000000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0,1ms <br> lvl:11"
-    }
-    if(num >= 1000000000000000000000000){
-        setInterval(game , 0.01)
-        num = num - 1000000000000000000000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0,01ms <br> lvl:11"
-    }
-    if(num >= 1000000000000000000000000000){
-        setInterval(game , 0.001)
-        num = num - 1000000000000000000000000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0,001ms <br> lvl:12"
-    }
-    if(num >= 1000000000000000000000000000000){
-        setInterval(game , 0.0001)
-        num = num - 1000000000000000000000000000000
-        autoclick.innerHTML = "AutoClicker <br> 1$/0,0001ms <br> lvl:13"
-    }
-    if(num >= 1000000000000000000000000000000000){
-        setInterval(game , 0.00001)
-        num = num - 1000000000000000000000000000000000
-        npc = npc * 2
-        autoclick.innerHTML = "AutoClicker <br> 2$/0,00001ms <br> lvl:13"
-    }
-    if(num >= 1000000000000000000000000000000000000){
-        setInterval(game , 0.00001)
-        num = num - 1000000000000000000000000000000000000
-        npc = npc * 3
-        autoclick.innerHTML = "AutoClicker <br> 3$/1μs <br> lvl:14"
-    }**/
-
 alert("Se hai già giocato una volta a questo gioco e vuoi recuperare gli ultimi guadagni,clicca in alto a destra su Riprendi dalla scorsa volta;Il tasto non funzionerà se voi premete sull'immagine per guadagnare altri soldi perciò attenzione")
-
 function upgrade(){
     if(num >= 20){
         var compra = document.getElementById("Marco")
         compra.style.display = "none"
         num = num - 20
-        npc = 2;
+        npc = npc + 2;
     }
     else{
          
@@ -239,7 +159,7 @@ function up2(){
         var compra = document.getElementById("Uranio")
         compra.style.display = "none"
         num = num - 200
-        npc = 10;
+        npc = npc + 10;
          
     }
     else{
@@ -253,7 +173,7 @@ function up3(){
         var compra = document.getElementById("Fagioli")
         compra.style.display = "none"
         num = num - 3000
-        npc = 50;
+        npc = npc + 50;
          
     }
     else{ 
@@ -266,7 +186,7 @@ function up4(){
         var compra = document.getElementById("Formaggio")
         compra.style.display = "none"
         num = num - 25000
-        npc = 100; 
+        npc = npc + 100; 
     }
     else{
         alert("Sei troppo povero per comprare i biscotti al formaggio")
@@ -277,7 +197,7 @@ function up5(){
         var compra = document.getElementById("Prosciutto")
         compra.style.display = "none"
         num = num - 75000
-        npc = 500;
+        npc = npc + 500;
          
     }
     else{ 
@@ -290,7 +210,7 @@ function up6(){
         var compra = document.getElementById("Peperoncino")
         compra.style.display = "none"
         num = num - 500000
-        npc = 5000;
+        npc = npc + 5000;
          
     }
     else{
@@ -304,7 +224,7 @@ function up7(){
         var compra = document.getElementById("Cloro")
         compra.style.display = "none"
         num = num - 10000000
-        npc = 10000;
+        npc = npc + 10000;
          
     }
     else{
@@ -318,7 +238,7 @@ function up8(){
         var compra = document.getElementById("Erba")
         compra.style.display = "none"
         num = num - 30000000
-        npc = 50000;
+        npc = npc + 50000;
          
     }
     else{
@@ -332,7 +252,7 @@ function up9(){
         var compra = document.getElementById("Cemento")
         compra.style.display = "none"
         num = num - 200000000
-        npc = 200000;
+        npc = npc + 200000;
          
     }
     else{
@@ -346,13 +266,10 @@ function up10(){
         var compra = document.getElementById("Bronzo")
         compra.style.display = "none"
         num = num - 1000000000
-        npc = 1000000;
-        0
+        npc = npc + 1000000;
 
     }
     else{
-        0
-        e
         alert("Sei troppo povero per comprare i biscotti al bronzo")
     }
 }
@@ -362,13 +279,10 @@ function up11(){
         var compra = document.getElementById("Argento")
         compra.style.display = "none"
         num = num - 6000000000
-        npc = 5000000;
-        1
+        npc = npc + 5000000;
 
     }
     else{
-        1
-        e
         alert("Sei troppo povero per comprare i biscotti all'argento")
     }
 }
@@ -377,13 +291,10 @@ function up12(){
         var compra = document.getElementById("Oro")
         compra.style.display = "none"
         num = num - 35000000000
-        npc = 100000000;
-        2
+        npc = npc + 100000000;
 
     }
     else{
-        2
-        e
         alert("Sei troppo povero per comprare i biscotti all'oro")
     }
 }
@@ -392,13 +303,12 @@ function up13(){
         var compra = document.getElementById("Diamante")
         compra.style.display = "none"
         num = num - 800000000000
-        npc = 1000000000;
-        3
+        npc = npc + 1000000000;
+        
 
     }
     else{
-        3
-        e
+        
         alert("Sei troppo povero per comprare i biscotti al diamante")
     }
 }
@@ -407,13 +317,11 @@ function up14(){
         var compra = document.getElementById("Amuchina")
         compra.style.display = "none"
         num = num - 9000000000000
-        npc = 5000000000
-        4
-        ;
+        npc = npc + 5000000000
+        
     }
     else{
-        4
-        e;
+      
         alert("Sei troppo povero per comprare i biscotti all'amuchina")
     }
 }
@@ -422,13 +330,12 @@ function up15(){
         var compra = document.getElementById("Olive")
         compra.style.display = "none"
         num = num - 50000000000000
-        npc = 10000000000;
-        5
+        npc = npc + 10000000000;
+        
 
     }
     else{
-        5
-        e
+        
         alert("Sei troppo povero per comprare i biscotti alle olive")
     }
 }
@@ -437,13 +344,12 @@ function up16(){
         var compra = document.getElementById("Pizza")
         compra.style.display = "none"
         num = num - 110000000000000
-        npc = 1000000000000; //Un Bilione
-        6
+        npc = npc + 1000000000000; //Un Bilione
+        
 
     }
     else{
-        6
-        e
+        
         alert("Sei troppo povero per comprare i biscotti alla pizza")
     }
 }
@@ -452,13 +358,13 @@ function up17(){
         var compra = document.getElementById("Ketchup")
         compra.style.display = "none"
         num = num - 12000000000000000
-        npc = 20000000000000; //20 Bilioni
-        7
+        npc = npc + 20000000000000; //20 Bilioni
+        
 
     }
     else{
-        7
-        e
+        
+        
         alert("Sei troppo povero per comprare i biscotti al ketchup")
     }
 }
@@ -467,16 +373,41 @@ function up18(){
         var compra = document.getElementById("Maionese")
         compra.style.display = "none"
         num = num - 260000000000000000
-        npc = 100000000000000; //100 Bilioni
-        8
+        npc = npc + 100000000000000; //100 Bilioni
+        
 
     }
     else{
-        8
-        e
+        
+        
         alert("Sei troppo povero per comprare i biscotti al maionese")
     }
 }
+function up19(){
+    if(num >= 690000000000000000){
+        var compra = document.getElementById("Spaghetti")
+        compra.style.display = "none"
+        num = num - 690000000000000000
+        npc = npc + 500000000000000; //500 Bilioni
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti agli spaghetti")
+    }
+}
+function up20(){
+    if(num >= 750000000000000000){
+        var compra = document.getElementById("Mbappè")
+        compra.style.display = "none"
+        num = num - 750000000000000000
+        npc = npc + 700000000000000; //700 Bilioni
+    }
+    else{
+        alert("Sei troppo povero per comprare i biscotti al Mbappè")
+    }
+}
+
+
+
 //autoclickers
 function Mario(){
     var clickpersecond = document.getElementById("clickpersecond")
@@ -627,11 +558,24 @@ function Reich3(){
         setInterval(game , 5)
         num = num - 1000000000000000000
         document.getElementById("Reich2").style.display = "none"
-        document.getElementById("Reich3").style.display = "block"
+        document.getElementById("Cracco").style.display = "block"
         clickpersecond.innerHTML = "200 cps"
     }
     else{
         alert("Non puoi comprare il terzo reich(Impero nazista)")
+    }
+}
+function Cracco(){
+    var clickpersecond = document.getElementById("clickpersecond")
+    if(num >= 100000000000000000000){
+        setInterval(game , 2)
+        num = num - 100000000000000000000
+        document.getElementById("Reich3").style.display = "none"
+        document.getElementById("//").style.display = "block"
+        clickpersecond.innerHTML = "500 cps"
+    }
+    else{
+        alert("Non puoi comprare carlo Cracco")
     }
 }
 function load(){
@@ -656,6 +600,11 @@ function hack(){
         num = 999999999999999999999999999999999999999999999999999999999999 //Un Miliardo
         cheat.value = ""
     }
+    if(cheat.value == "/ruin but not too much"){
+        num = 100000000000000000000 //Un Miliardo
+        cheat.value = ""
+    }
+
     if(cheat.value == "/clear"){
         num = 0
         cheat.value == ""
@@ -667,6 +616,24 @@ function hack(){
     if(cheat.value == "/autoclicker"){
         setInterval(game , 0.00001)
         npc = npc * 999999999999999999999999999999999
+        cheat.value = ""
+    }
+    if(cheat.value == "/unlock maionese"){
+        var compra = document.getElementById("Maionese")
+        compra.style.display = "none"
+        npc = npc + 100000000000000; //100 Bilioni
+        cheat.value = ""
+    }
+    if(cheat.value == "/unlock spaghetti"){
+        var compra = document.getElementById("Spaghetti")
+        compra.style.display = "none"
+        npc = npc + 500000000000000; //500 Bilioni
+        cheat.value = ""
+    }
+    if(cheat.value == "/unlock mbappè"){
+        var compra = document.getElementById("Mbappè")
+        compra.style.display = "none"
+        npc = npc + 700000000000000; //700 Bilioni
         cheat.value = ""
     }
     if(cheat.value == undefined){

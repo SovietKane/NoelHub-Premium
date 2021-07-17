@@ -469,6 +469,22 @@ button#Maionese{
     height: 100px;
     width: 1000px;
 }
+button#Spaghetti{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Spaghetti.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
+button#Mbappè{
+    font-size: x-large;
+    background-repeat: no-repeat;
+    background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Mbappè.jpg);
+    border-radius: 20px;
+    height: 100px;
+    width: 1000px;
+}
 
 
 button#load{
@@ -607,6 +623,16 @@ button#Reich3{
     height: 100px;
     color: greenyellow;
     background-image: url(Immagini/terzoreich.gif);
+}
+button#Cracco{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 250px;
+    width: 100px;
+    height: 100px;
+    color: greenyellow;
+    background-image: url(https://media.gqitalia.it/photos/5c066d26f7aa3fc887fd8e1a/1:1/w_100%2Cc_limit/1456758926_GettyImages-105482498.jpg);
 }
 form#cheat{
     position: absolute;
@@ -756,6 +782,22 @@ form#cheat{
         font-size: 20px;
         background-repeat: no-repeat;
         background-image: url(https://bennet-cdn.thron.com/delivery/public/thumbnail/bennet/3b8c77f9-5745-491e-a367-529670dcde73/BEB9AN0/std/100X100/M_1655984_1.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 300px;
+    }
+    button#Spaghetti{
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Spaghetti.jpg);
+        border-radius: 20px;
+        height: 100px;
+        width: 300px;
+    }
+    button#Mbappè{
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-image: url(Funzioni/ClickerGame/Alternative/Immagini/Mbappè.jpg);
         border-radius: 20px;
         height: 100px;
         width: 300px;
